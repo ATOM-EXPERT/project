@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+body {
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+body {
+  background-image: url(APT.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.parent {
+  list-style: none;
+  margin: 20px auto;
+  text-align: center;
+  width: fit-content;
+  color: black;
+  position: relative;
+}
+/* 
+.dropelement {
+  list-style: none;
+  background: white;
+  visibility: hidden;
+  position: absolute;
+  width: fit-content;
+  min-width: 120px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+} */
+.parent:hover {
+  /* list-style: none;
+  /* margin: 20px auto; */
+  /* text-align: center;
+  position: relative; * */
+  color: black;
+  background: goldenrod;
+}
+
+
+.dropelement{
+  display: none;
+  transition: all 0.3s ease;
+  list-style: none;
+  background: white;
+  
+
+}
+.dropelement :hover{
+  background: goldenrod;
+}
+
+/* .parent:hover .dropelement {
+  visibility: visible;
+} */
+
+.dropelement {
+  display: none;
+}
+
+.dropelement.show {
+  display: block;
+}
+
+
+.parent:hover .dropelement {
+  visibility: visible;
+}
+
+.parent:hover li:hover {
+  cursor: pointer;
+  color: black;
+  background: goldenrod;
+}
+.a{
+  text-decoration: none;
+}
+
+.apt {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.launch {
+  background: white;
+  background-size: cover;
+  flex: 1 1 400px;
+  max-width: 600px;
+  min-width: 280px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.lunch {
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.span {
+  background: black;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.high {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+.get {
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.getto {
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* Form */
+form {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  background: yellow;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: gold;
+}
+
+.but {
+  margin: auto;
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: blue;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  .apt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .launch {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .get {
+    width: 100%;
+    padding: 20px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .apt {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .get {
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input,
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .span {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+}

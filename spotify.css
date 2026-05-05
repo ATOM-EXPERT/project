@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    width: 100%;
+    overflow-y: auto;
+    background-color: black;
+  }
+  
+  header {
+    background-color: #000000; 
+    color: white;
+    padding: 15px 20px;
+  }
+  
+  header a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    color: lightgray;
+  }
+  .list{
+    list-style: none;
+  }
+  
+.parent {
+  list-style: none;
+  margin: 20px auto;
+  text-align: center;
+  width: fit-content;
+  color: white;
+  position: relative;
+}
+
+/* .dropelement {
+  list-style: none;
+  background: green;
+  color: white;
+  visibility: hidden;
+  position: absolute;
+  width: fit-content;
+  min-width: 120px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+} */
+
+/* .parent:hover .dropelement {
+  visibility: visible;
+} */
+
+.parent:hover {
+  /* list-style: none;
+  /* margin: 20px auto; */
+  /* text-align: center;
+  position: relative; * */
+  color: black;
+}
+
+/* .dropelement {
+  list-style: none;
+  background: white;
+  visibility: hidden;
+  position: absolute;
+  min-width: 150px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  display: none;
+  transition: all 0.3s ease;
+} */
+.dropelement{
+  display: none;
+  transition: all 0.3s ease;
+  list-style: none;
+  background: black;
+  
+
+}
+.dropelement :hover{
+  background: green;
+}
+
+.dropelement {
+  display: none;
+}
+
+.dropelement.show {
+  display: block;
+}
+
+
+.parent:hover li:hover {
+  cursor: pointer;
+  color: green;
+  background: white;
+}
+.a{
+  text-decoration: none;
+}
+
+  .subscription{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #individual,#student,#duo{
+    background: green;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+    width: 400px;
+  }
+  .premium{
+    background: green;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+ 
+.accordion,
+.accordion-item,
+.accordion-button,
+.accordion-body {
+  background-color: black !important;
+  color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: green !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  border: none !important;
+  border-bottom: 1px solid #333 !important;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+/* .accordion {
+    background-color: black !important;
+    color: white !important;
+  }
+  
+  .accordion-item {
+    background-color: black !important;
+    border-bottom: 1px solid gray;
+  }
+  
+  .accordion-button {
+    background-color: black;
+    color: white !important;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: black;
+    color: white;
+  }
+  
+  .accordion-body {
+    background-color: black;
+    color: white;
+  }
+  
+  .accordion-button::after {
+    filter: invert(1);
+  } */
+
+  .base{
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+
+  .baselist{
+    list-style: none;
+  }
+                                                              

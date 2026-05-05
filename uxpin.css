@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+body {
+  margin: 0 auto;
+  line-height: 1.6;
+}
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-left: 100px;
+}
+.a{
+    text-decoration: none;
+    font-family: serif;
+    color: black;
+}
+.a:hover{
+    color: gray;
+}
+.sub{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.parent {
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+    color: black;
+    position: relative;
+  
+  }
+  
+  /* .dropelement {
+    list-style: none;
+    background: white;
+    visibility: hidden;
+    position: absolute;
+    width: fit-content;
+    min-width: 120px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .parent:hover .dropelement {
+    visibility: visible;
+    width: fit-content;
+  } */
+  .parent:hover {
+    /* list-style: none;
+    /* margin: 20px auto; */
+    /* text-align: center;
+    position: relative; * */
+    color: black;
+    background: deepskyblue;
+  }
+  
+  /* .dropelement {
+    list-style: none;
+    background: white;
+    visibility: hidden;
+    position: absolute;
+    min-width: 150px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    display: none;
+    transition: all 0.3s ease;
+  } */
+  .dropelement{
+    display: none;
+    transition: all 0.3s ease;
+    list-style: none;
+    background: white;
+    
+
+  }
+  .dropelement :hover{
+    background: deepskyblue;
+  }
+
+
+  .dropelement {
+    display: none;
+  }
+  
+  .dropelement.show {
+    display: block;
+  }
+  
+  
+  .parent:hover li:hover {
+    cursor: pointer;
+    color: black;
+    background: blue;
+  } */
+.book{
+    background: gray;
+}
+.what{
+    display: flex;
+    flex-direction: row;
+}
+.inter{
+    display: flex;
+    flex-direction: row;
+    background: blueviolet;
+}
+
+.design{
+    display: flex; 
+    flex-direction: row; 
+    /* justify-content: center; */
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+.still{
+    background-image: url(step.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(8, 8, 8, 0.9); 
+    background-blend-mode: overlay; 
+    height: 250px;
+    padding: 20px;
+}
+.stil{
+    display: flex;
+    flex-direction: row;
+}
+.follow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.subscribe{
+    background: gray
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* .index{
+    position: relative;
+    height: 80px;
+    top: 0%; */
+    /* margin: 10px 20px; */
+    /* bottom: 0%;
+    z-index: 100;
+} */
+.index{
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    /* margin-top: 50px; */
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu,
+    .sub,
+    .what,
+    .inter,
+    .design,
+    .stil,
+    .follow,
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .still {
+        height: 180px;
+        padding: 15px;
+        font-size: 10px;
+    }
+
+    .index {
+        font-size: 10px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .still {
+        height: 150px;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .index {
+        font-size: 10px;
+    }
+
+    .menu,
+    .list,
+    .follow {
+        font-size: 10px;
+    }
+}
+/* @media (max-width: 768px) {
+    .menu,
+    .sub,
+    .what,
+    .inter,
+    .design,
+    .stil,
+    .follow,
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .still {
+        height: 180px;
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .index {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .still {
+        height: 150px;
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .index {
+        font-size: 0.8em;
+    }
+
+    .menu,
+    .list,
+    .follow {
+        font-size: 0.9em;
+    }
+} */

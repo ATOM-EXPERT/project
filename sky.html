@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scy Scanner</title>
+        <link rel="stylesheet" href="sky.css">
+       <!-- BOOTSTRAP ICON CDN -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <section class="header">
+              <header>
+                <nav class="nav-header">
+                    <ul>Sky Scanner</ul>
+                    <ul style="margin-left: 500px;">Help</ul>
+                    <ul><i class="bi bi-globe-americas"></i></ul>
+                    <ul><i class="bi bi-heart-fill"></i></ul>
+                    <ul>Login</ul>
+                    <ul class="parent">
+                      <li class="dropdown" onclick="toggleMenu(event)">
+                        OTHER PROJECTS <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                    
+                        <ul class="dropelement" id="menu">
+                          <li><a href="index.html">Mattermark</a></li>
+                          <li><a href="apt.html">Aptible</a></li>
+                          <li><a href="paypal.html">Paypal</a></li>
+                          <li><a href="mtn.html">MTN</a></li>
+                          <li><a href="wapplyzer.html">Wapplyzer</a></li>
+                          <li><a href="sky.html">Skyscanner</a></li>
+                          <li><a href="uxpin.html">UX PIN</a></li>
+                          <li><a href="spotify.html">Spotify</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+                </nav>
+              </header>
+                <button class="flight-button">
+                    <i class="bi bi-airplane"></i>
+                    Flight
+                </button>
+                <button class="hotelhire-button">
+                    <i class="bi bi-buildings"></i>
+                    Hotel
+                </button>
+                <button class="carhire-button">
+                    <i class="bi bi-car-front"></i>
+                    Car hire
+                </button>
+                <h2 style="color: white;">
+                    Millions of cheap flights. One simple search.
+                </h2>
+                <select class="select">
+                    <option value="">
+                        One way
+                    </option>
+                    <option value="">
+                        Return
+                    </option>
+                    <option value="">
+                        Multi-city
+                    </option>
+                </select><br>
+                    <input class="input" type="text" placeholder="From Lagos">
+                    <i class="bi bi-arrow-repeat" style="color: white; font-size: xx-large;"></i>
+                    <input class="input" type="text" placeholder="To Nigeria">
+                    <input class="input" type="date" placeholder="Depart Add Date">
+                    <input class="input" type="date" placeholder="Return Add Date">
+                    <input class="input" type="text" placeholder="Travellers and cabin class">
+                    <button id="search">Search</button>
+                    <div class="selection">
+                      <div id="checkbox">
+                        <p style="color: white;">
+                          <input type="checkbox">Add nearby airports
+                        </p>
+                        <p style="color: white; margin-left: 50px;">
+                          <input type="checkbox">Add nearby airports
+                        </p>
+                        <p style="color: white; margin-left: 40%;">
+                          <input type="checkbox">Add a hotel
+                        </p>
+                      </div>
+
+                      <div>
+                        <p style="color: white;"><input type="checkbox">Direct flights</p>
+                      </div>
+                    </div>
+        </section>
+
+        <section>
+            <button class="hotel-button">
+                <i class="bi bi-buildings"></i>
+                Hotels
+            </button>
+            <button class="car-button">
+                <i class="bi bi-car-front"></i>
+                Car Hires
+            </button>
+            <button class="explore-button">
+                <i class="bi bi-globe-americas"></i>
+                Explore everywhere
+            </button>
+        </section>
+        <section class="explore">
+          <div class="explore-div">
+            <p style="margin-bottom: auto;">
+              Can't we decide where to go ?
+            </p>
+            <h1 style="font-weight: bolder; font-size: 50px; margin-top: auto;" >
+                Explore every <br>destination
+            </h1>
+            <button class="explore-flight-button">
+                search flight everywhere
+            </button>
+          </div>
+        </section>
+
+        <section class="accord">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                       <span class="accordbut">How does Skyscanner work?</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        We’re a flight, car hire and hotel search engine. We scan all the top airlines and travel providers across the net, so you can compare flight fares and other travel costs in one place. Once you’ve found the best flight, car hire or hotel, you book directly with the provider.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <span class="accordbut">How can I find the cheapest flight using Skyscanner?</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Finding flights is easy here – over 100 million savvy travellers come to us each month to find cheap flight tickets, hotels and car hire. Here are a few simple tips on how to get the most out of your flight search.
+                        Save money and time.Whether it's the fastest flight or the smartest stay, you can pick your preferred flight provider or hotel based on real traveller ratings, and book instantly.
+                        Search Everywhere. Go anywhere.Fancy a trip but don’t mind where? Or perhaps you want to discover somewhere new. Search ‘Everywhere’ for the best budget airfare anywhere on any given day.
+                        Find the cheapest time to fly.If you have a destination in mind and want to find the cheapest flight, choose ‘Cheapest month’ when you search. Then find flights on the cheapest day.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span class="accordbut">Where should I book a flight to right now?</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      If you're looking for inspiration for your next trip, search Everywhere to find a cheap flight ticket anywhere.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                     <span class="accordbut">Do I book my flight with Skyscanner?</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      We’re a search engine, so after you’ve found the best flight ticket you’ll book directly with the airline or travel provider on their site. This will give you the opportunity to add any loyalty information you would like and select your preferred flight options, such as seating.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      <span class="accordbut">What happens after I have booked my flight?</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Your flight booking confirmation email and all the other info you'll need will come from the airline or provider you booked with. If you have any follow-up questions about your booking, or want to change or cancel your flight, you’d need to get in touch with them.
+                    </div>
+                  </div>
+                </div>
+
+            <div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      <span class="accordbut">Does Skyscanner do hotels too?</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Yes! You can use the same magic that powers our flight search to find your perfect stay anywhere.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      <span class="accordbut">What about car hire?</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      You can also use Skyscanner to search for and compare cheap car hire in seconds, then pick up your wheels from the airport as soon as you touch down.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      <span class="accordbut">What’s a Price Alert?</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      If you set up a Price Alert, we’ll watch the price of plane tickets for you, and let you know via email or push notification via the app if they rise or fall.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                     <span class="accordbut"> Can I book a flexible flight ticket? </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      We understand how important it is to have flexible holiday plans. Sometimes, you can pay an extra fee for an amendable airline ticket, so look out for this option as you book. You can also look for hotels and car hire options with free cancellation, so you can book now and amend or even cancel later if you need to.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                      <span class="accordbut">Can I book flights that emit less CO₂? </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Yes - since we began showing carbon emission info on flights where it’s available, over 100 million travellers have found a plane ticket with lower emissions for their route.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                <span class="accordbut">Our international sites</span>
+              </button>
+            </h2>
+            <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+               <table>
+                <th>
+                  <tr>
+                    <td><a href="#">(GB) Cheap flights</a></td>
+                    <td><a href="#">(AU) Australia - Cheap flights</a></td>
+                    <td><a href="#">(CN) 中国 - 机票</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">(DK) Flybilletter</a></td>
+                    <td><a href="#">(FI) Suomi - lennot</a></td>
+                    <td><a href="#">(FR) France - vols</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">(DE) Deutschland - Flüge</a></td>
+                    <td><a href="#">(IN) India - Flight tickets</a></td>
+                    <td><a href="#">(IE) Ireland - flights</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">(IT) Italia - voli</a></td>
+                    <td><a href="#">(JP) 日本 - 航空券</a></td>
+                    <td><a href="#">(MX) México - vuelos</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">(NL) Vliegtickets</a></td>
+                    <td><a href="#">(NO) Billige flybilletter</a></td>
+                    <td><a href="#">(PL) Polska – tanie loty</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">(RU) Россия - авиабилеты</a></td>
+                    <td><a href="#">(ES) España - vuelos</a></td>
+                    <td><a href="#">(SE) Sverige - flyg
+                    </a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">(CH) Schweiz - Flüge</a></td>
+                    <td><a href="#">(TR) Türkiye - uçak biletleri</a></td>
+                    <td><a href="#">(AE) United Arab Emirates - flights</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">(US) USA - flights</a></td>
+                  </tr>
+                </th>
+               </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+           <div class="footer-direction">
+               <nav>
+                <button style="background-color: transparent; color: white; border: ; border-radius: 5px; padding-left: 15px; padding-right: 50px; padding-top: 5px; padding-bottom: 5px; font-family: sans-serif; font-weight: bold;" >
+                    Nigeria-English(UK)-(#) NGN
+                </button>
+              </nav>
+
+              <nav>
+                  <ul>Help</ul>
+                  <ul>Privacy Setting</ul>
+                  <ul>Log in</ul>
+              </nav>
+
+              <nav>
+                <ul>Cookie Policy</ul>
+                <ul>Privacy Policy</ul>
+                <ul>Terms of Sevice</ul>
+                <ul>Comany Details</ul>
+              </nav>
+              <nav class="footer-accordion">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Explore
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul>
+                          <li><strong>Domestic flights</strong>
+                            <ul>
+                              <li>Cities</li>
+                              <ul>
+                                <li>Lagos</li>
+                                <li>Abuja</li>
+                                <li>Port Harcourt</li>
+                                <li>London</li>
+                                <li>Accra</li>
+                                <li>Uyo</li>
+                                <li>Addis Ababa</li>
+                              </ul>
+                              <li>Last-minute deals</li>
+                              <li>Airports</li>
+                            </ul>
+                          </li>
+                        
+                          <li><strong>Countries / Regions</strong>
+                            <ul>
+                              <li>Nigeria</li>
+                              <li>United States</li>
+                              <li>United Kingdom</li>
+                            </ul>
+                          </li>
+                        
+                          <li><strong>Airlines</strong></li>
+                          <li><strong>Flights</strong></li>
+                          <li><strong>Hotels</strong></li>
+                          <li><strong>Car hire</strong></li>
+                          <li><strong>App</strong></li>
+                          <li><strong>Sitemap</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Company
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul>
+                          <li><strong>About us</strong>
+                            <ul>
+                              <li>Why Skyscanner?</li>
+                              <li>Media</li>
+                              <li>Our people</li>
+                              <li>Accessibility</li>
+                              <li>Sustainability</li>
+                              <li>Jobs</li>
+                              <li>Security</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                         Partners
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul>
+                          <li><strong>Work with us</strong>
+                            <ul>
+                              <li>Advertise with us</li>
+                              <li>Travel Insight</li>
+                              <li>Affiliates</li>
+                              <li>Travel APIs</li>
+                            </ul>
+                          </li>
+                        </ul>                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                           Trips
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <footer class="footer">
+                          <div class="footer-container">
+                        
+                            <!-- Domestic Flights Section -->
+                            <div class="footer-column">
+                              <ul>
+                                <li><strong>Domestic flights</strong>
+                                  <ul>
+                                    <li>Cities</li>
+                                    <li>Lagos</li>
+                                    <li>Abuja</li>
+                                    <li>Port Harcourt</li>
+                                    <li>London</li>
+                                    <li>Accra</li>
+                                    <li>Uyo</li>
+                                    <li>Addis Ababa</li>
+                                    <li>Last-minute deals</li>
+                                  </ul>
+                                </li>
+                                <li><strong>Airports</strong></li>
+                                <li><strong>Countries / Regions</strong>
+                                  <ul>
+                                    <li>Nigeria</li>
+                                    <li>United States</li>
+                                    <li>United Kingdom</li>
+                                  </ul>
+                                </li>
+                                <li><strong>Airlines</strong></li>
+                                <li><strong>Flights</strong></li>
+                                <li><strong>Hotels</strong></li>
+                                <li><strong>Car hire</strong></li>
+                                <li><strong>App</strong></li>
+                                <li><strong>Sitemap</strong></li>
+                              </ul>
+                            </div>
+                        
+                            <!-- About Us Section -->
+                            <div class="footer-column">
+                              <ul>
+                                <li><strong>About us</strong>
+                                  <ul>
+                                    <li>Why Skyscanner?</li>
+                                    <li>Media</li>
+                                    <li>Our people</li>
+                                    <li>Accessibility</li>
+                                    <li>Sustainability</li>
+                                    <li>Jobs</li>
+                                    <li>Security</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                        
+                            <!-- Work With Us Section -->
+                            <div class="footer-column">
+                              <ul>
+                                <li><strong>Work with us</strong>
+                                  <ul>
+                                    <li>Advertise with us</li>
+                                    <li>Travel Insight</li>
+                                    <li>Affiliates</li>
+                                    <li>Travel APIs</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                        
+                            <!-- Flights / Hotels / Car Hire Section -->
+                            <div class="footer-column">
+                              <ul>
+                                <li><strong>Flights</strong>
+                                  <ul>
+                                    <li>London</li>
+                                    <li>New York</li>
+                                    <li>Lagos</li>
+                                    <li>Houston</li>
+                                    <li>Johannesburg</li>
+                                    <li>Cairo</li>
+                                    <li>Paris</li>
+                                    <li>Washington D.C.</li>
+                                    <li>Dubai</li>
+                                  </ul>
+                                </li>
+                                <li><strong>Hotels</strong>
+                                  <ul>
+                                    <li>London</li>
+                                    <li>New York</li>
+                                    <li>Lagos</li>
+                                    <li>Houston</li>
+                                    <li>Johannesburg</li>
+                                    <li>Cairo</li>
+                                    <li>Paris</li>
+                                    <li>Washington D.C.</li>
+                                    <li>Dubai</li>
+                                  </ul>
+                                </li>
+                                <li><strong>Car hire</strong></li>
+                              </ul>
+                            </div>
+                        
+                          </div>
+                        </footer>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        International sites
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul>
+                          <li>(AU) Australia - Cheap flights</li>
+                          <li>(CN) 中国 - 机票</li>
+                          <li>(DK) Flybilletter</li>
+                          <li>(FI) Suomi - lennot</li>
+                          <li>(FR) France - vols</li>
+                          <li>(DE) Deutschland - Flüge</li>
+                          <li>(IN) India - Flight tickets</li>
+                          <li>(IE) Ireland - flights</li>
+                          <li>(IT) Italia - voli</li>
+                          <li>(JP) 日本 - 航空券</li>
+                          <li>(MX) México - vuelos</li>
+                          <li>(NL) Vliegtickets</li>
+                          <li>(NO) Billige flybilletter</li>
+                          <li>(PL) Polska – tanie loty</li>
+                          <li>(RU) Россия - авиабилеты</li>
+                          <li>(ES) España - vuelos</li>
+                          <li>(SE) Sverige - flyg</li>
+                          <li>(CH) Schweiz - Flüge</li>
+                          <li>(TR) Türkiye - uçak biletleri</li>
+                          <li>(AE) United Arab Emirates - flights</li>
+                          <li>(GB) Cheap flights</li>
+                          <li>(US) USA - flights</li>
+                        </ul>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+            <p style="text-align: center;">
+                Compare and book cheap flight with Skyscanner <br>
+                &copy;Skyscanner Ltd 2002-2025
+            </p>
+        </footer>
+        <script>
+          window.onload = function () {
+            alert("This is a student project. It is not an attempt to clone any existing website.");
+          };
+          
+          function toggleMenu(e) {
+        e.stopPropagation(); 
+
+      let menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+
+      document.addEventListener("click", function () {
+        let menu = document.getElementById("menu");
+        menu.classList.remove("show");
+      });
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

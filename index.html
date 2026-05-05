@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATTER MARK</title>
+     <!-- CSS BOOTSTRAP CDN LINK -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+
+     <!-- FONT AWESOME CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="mattermark.css">
+</head>
+<body>
+    <!-- <marquee style="font-size: 30px; font-weight: bolder;">This is a student's project and not an attempt to clone the existing webpage.</marquee> -->
+    <div class="header">
+       <p class="phead">We are excited to announce that Mattermark has re-launched as an independent company!</p>
+       <i><a href="#"><h2 class="learn">Learn More <i class="fa-solid fa-arrow-right"></i></h2></a></i>
+    </div>
+
+    <div class="suphead">
+        <div class="subhead">
+            <img src="logo-cyan-light-bg.png" alt="logo" width="200" height="52">
+        </div>
+
+        <div>
+            <ul class="parent">
+                <li class="dropdown" onclick="toggleMenu(event)">
+                  OTHER PROJECTS <i class="fa-sharp fa-solid fa-arrow-down"></i>
+              
+                  <ul class="dropelement" id="menu">
+                    <li><a href="index.html">Mattermark</a></li>
+                    <li><a href="apt.html">Aptible</a></li>
+                    <li><a href="paypal.html">Paypal</a></li>
+                    <li><a href="mtn.html">MTN</a></li>
+                    <li><a href="wapplyzer.html">Wapplyzer</a></li>
+                    <li><a href="sky.html">Skyscanner</a></li>
+                    <li><a href="uxpin.html">UX PIN</a></li>
+                    <li><a href="spotify.html">Spotify</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="submenu">
+            <div class="subhead">
+                <ul class="parent subhead">
+                    <li class="dropdown list">SOLUTIONS<i class="fa-sharp fa-solid fa-arrow-down"></i>
+                        <ul class="dropelement">
+                            <li class="list"><a style="color: deepskyblue;" href="#">LIST BUILDING</a></li><br>
+                            <li class="list"><a style="color: deepskyblue;" href="#"> LEAD ENRICHMENT</a></li>
+                            <li class="list"><a style="color: deepskyblue;" href="#"> DEVELOPER TOOLS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <ul class="parent subhead">
+                    <li class="dropdown list pri">INTEGRATIONS<i class="fa-sharp fa-solid fa-arrow-down"></i>
+                        <ul class="dropelement">
+                            <li><a style="color: deepskyblue;" href="#">SALESFORCE</a></li>
+                            <li><a style="color: deepskyblue;" href="#">MICROSOFT EXCEL</a></li>
+                            <li><a style="color: deepskyblue;" href="#"></a>GOOGLE SHEETS</li>
+                            <li><a style="color: deepskyblue;" href="#"></a>BROWSER EXTENSION</li>
+                            <li><a style="color: deepskyblue;" href="#"></a>IPHONE APP</li>
+                        </ul>
+                    </li>
+                </ul>
+    
+               <div>
+                    <ul class="subhead">
+                        <li class="pri"><a href="#" class="pri">PRICING</a></li>
+                        <li class="pri"><a href="#" class="pri">LOGIN</a></li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div class="headi">
+        <img src="logo-cyan-light-bg.png" alt="logo" width="200" height="52">
+        <i class="fas fa-bars menu-icon iparent" style="font-size: 40px;"></i>
+    </div> -->
+    
+      
+    <div class="navs">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li> -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      OTHER PROJECTS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="index.html">First</a></li>
+                      <li><a class="dropdown-item" href="apt.html">Second</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul> -->
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <div class="text-center">
+        <h1 class="data">Data-Driven Deal Making</h1>
+        <h2>
+            Discover, prospect, and track the world’s fastest-growing <br> companies and investors
+        </h2>
+        <button class="but">Start Free 14-Day Trial</button>
+        <P class="datap">No commitment, no credit card required.</P>
+       <div class="datai">
+            <img class="img" src="fuel_trns.png" alt="logo" width="80">
+            <img class="img" src="hcptrns.png" alt="logo" width="80">
+            <img class="img" src="MATT.png" alt="" width="300">
+            <img class="img" src="ludlow-new.png" alt="logo" width="80"> <br> <br>
+            <img class="img" src="usv-logo.png" alt="logo" width="52" height="52">
+            <img class="img" src="trident_trns.png" alt="logo" width="80">
+            <img class="img" src="northbridge-logo.png" alt="logo" width="80">
+       </div>
+    </div>
+
+    
+      <div class="com">
+        <div class="compi">
+            <img src="companypro.PNG" alt="">
+            <h5>Company Profiles</h5>
+            <p>
+                80+ fields per company including <br>geography, industry, revenue, <br>personnel, funding, and employee growth.
+            </p>
+        </div>
+        <div class="compi">
+                <img src="key.PNG" alt="">
+                <h5>Key Personnel</h5>
+                <p>Identify the right contact based on <br>title, function, and seniority.</p>
+        </div>
+        <div class="compi">
+                <img src="growthsig.PNG" alt="">
+                <h5>Growth Signals</h5>
+                <p>Get smarter about outreach by <br> monitoring changes in team size, <br>web traffic, media mentions and brmore.</p>
+        </div>
+    </div>
+    
+
+    <div>
+        <div class="usee">
+            <h1 class="useh">
+                Using Data You Can Trust
+            </h1>
+            <div class="use">
+                 <div class="used" >
+                <p class="usep">
+                    <strong class="uses">Where We Get Our Data</strong><br>
+                    We leverage machine learning, web crawlers, primary sources, and natural language processing to extract data from millions of news articles and websites daily. <br><br> Our team of in-house analysts verify the data every day - so you can close deals with conviction.
+                </p>
+            </div>   
+            <div>
+                <img src="AAA.svg" alt="" width="500" class="uset">
+            </div>  
+        </div>
+    </div>
+
+    <div class="dis">
+        <div class="disd">
+            <div class="disp">
+                <img src="opportunity.png" alt="logo" width="500" class="diss">
+            </div>
+            <div class="">
+                <p class="diss">
+                    <strong class="dist">Discover new opportunities</strong><br>
+                    The world’s business information in one place, filterable and sortable. Mattermark makes it faster and easier to source the best deals.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="track">
+        <div class="">
+            <p class="trackp">
+                <strong class="tracks">Track Success</strong>
+                <br>Search company and investor profiles for deep insights into their growth and performance over time. Break the cycle of doing business without good data.
+            </p>
+        </div>
+        <div class="">
+            <img src="growth.png" alt="logo" width="500" class="tracki">
+        </div>
+   </div>
+    
+    <div class="inf">
+        <div class="infd">
+            <div class="infp">
+                <img src="informed.png" alt="logo" width="500" class="infi">
+            </div>
+            <div class="">
+                
+                <p class="infs">
+                    <strong class="inft">Stay Informed</strong> <br>There are 300+ million private companies in the world. Saved Searches, Custom Lists, and News Notifications make it possible to keep tabs on the ones that matter most to you.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="auto">
+            <div class="">
+                <p class="autop">
+                    <strong class="autos">Automatically Enrich Leads in Salesforce</strong><br>
+                    Get actionable insights by syncing over 80 informative fields to help warm leads and power conversations from first touch to deal close. Get all the relevant information from inside Salesforce, and apply triggers and actions to any lead, opportunity, or other object. <a href="#" style="color: deepskyblue;">Learn More <i class="fa-solid fa-arrow-right" style="color: deepskyblue;"></i></a>
+                 </p>
+            </div>
+            <div class="">
+                <img src="automatic.png" alt="logo" width="500" class="autoi">
+            </div>
+        </div>
+    </div>
+
+    <div class="cus">
+        <div class="cusd">
+            <div class="cusp">
+                <img src="customize.png" alt="logo" width="500" class="cusi">
+            </div>
+            <div class="">
+                <p class="cuss">
+                   <strong class="cust">Customize your Experience with API</strong><br>
+                    Our API provides data on millions of companies. In just minutes, you can integrate Mattermark with your products, systems, and business processes. Create your own models and scoring algorithms to fit your business. <a href="#" style="color: deepskyblue;">Learn More <i class="fa-solid fa-arrow-right" style="color: deepskyblue;"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="expo">
+            <div class="">
+                <p class="expop">
+                    <strong class="expos"> Export Mattermark Data to Spreadsheets</strong><br>
+                    Pull Mattermark data directly into Google Sheets or <br> Microsoft Excel to add live updated company <br> Growth Scores, location, funding, employee count, <br>and more into your spreadsheets. <a href="#" style="color: deepskyblue;">Learn More <i class="fa-solid fa-arrow-right" style="color: deepskyblue;"></i></a> 
+                </p>
+            </div>
+            <div class="">
+                <img src="home-valuesection-spreadsheet.png" alt="logo" width="500" class="expoi">
+            </div>
+        </div>
+    </div>
+    <div class="deal">
+        <div class="row">
+            <h1 class="dealh">
+                Deal Professionals Use Our Data
+
+            </h1>
+            <div class="mid">
+                <div style="background-image: url(investors.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;   background-color: rgba(0, 191, 255, 0.5); background-blend-mode: overlay">
+                    <div>
+                        <ul class="midparent">
+                            <li class="mids middropdown"> <strong> <br><br>INVESTORS</strong><br>
+                                <ul class="middropelement">
+                                    Surface new companies and better deals, faster.
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div  style="background-image: url(sales.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;  background-color: rgba(0, 191, 255, 0.5); background-blend-mode: overlay;"  class="mid">
+                    <ul class="midparent">
+                        <li class="midt middropdown"><strong> <br><br>SALES / BD</strong> <br>
+                            <ul class="middropelement">
+                                Dramatically reduce prospecting time and identify future customers with Mattermark.
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul  style="background-image: url(profservices.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;   background-color: rgba(0, 191, 255, 0.5); background-blend-mode: overlay; height: 200px;" class="midparent">
+                        <li  class="midp middropdown"><strong> <br><br><br>PROFESSIONAL SERVICES</strong><br>
+                            <ul class="middropelement">
+                                Research markets, understand competitive landscapes, and deliver to clients quicker.
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mill">
+            <div>
+                <h3 class="millh">
+                    4 Million Companies <br> 20 Million Key Contacts
+                </h3>
+                    <p class="millp">Start contacting your target list today</p>
+                    <button class="buts">Start Free 14-Day Trial</button>
+                    <P class="butp">No commitment, no credit card required.</P>
+            </div>
+
+            <div>
+                <h3 style="color: navy;">
+                    Right data. Right format. <br> Right now.
+                </h3>
+                <ul>
+                    <li class="milli">Developer Tools (REST and GraphQL APIs)</li>
+                    <li class="milli">Web-based Data Browser (CSV and PDF)</li>
+                    <li class="milli">Spreadsheet Plugins (Excel and Sheets)</li>
+                    <li class="milli">Browser Extension (Google Chrome)</li>
+                    <li class="milli">Mobile (iPhone lookup app)</li>
+                    <li class="milli">CRM Integration (Salesforce)</li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="footer" style="color: white;">
+        
+            <div>
+                <img src="mm-logo-white.png" alt="" width="250" class="footeri">
+               <li style="text-align: justify; margin-top: 10px; font-weight: 500; list-style: none;">   
+                    Mattermark, Inc. <br>
+                    61 Moraga Way Suite 6 <br>
+                    Orinda, CA 94563
+               </li>
+            </div>
+            <div>
+                <h4 style="margin-left: 20px;">Solutions</h4>
+                <ul>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px; font-weight: 500;">Prospect <br>Discovery</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Lead Enrichment</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Developer API</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-left: 20px;">Integrations</h4>
+                <ul>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Salesforce</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">MS Excel</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Google Sheets</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">iOS App</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Chrome Extension</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-left: 20px;">Company</h4>
+                <ul>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Lists</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Newsletters</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Webinars</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-left: 20px;">Support</h4>
+                <ul>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Help Center</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Email Us</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Privacy</li>
+                    <li style="margin-top: -10px; list-style: none; font-size: 20px;  font-weight: 500;">Terms</li>
+                </ul>
+            </div>
+
+    </div>
+    <script>
+        window.onload = function () {
+          alert("This is a student project. It is not an attempt to clone any existing website.");
+        };
+
+        function toggleMenu(e) {
+        e.stopPropagation(); 
+
+      let menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+
+      document.addEventListener("click", function () {
+        let menu = document.getElementById("menu");
+        menu.classList.remove("show");
+      });
+
+    </script>
+    <!-- BOOT STRAP CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

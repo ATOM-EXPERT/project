@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APTIBLE</title>
+    <link rel="stylesheet" href="apt.css">
+    <!-- BOOTSRAP CDN LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="icon" href="aptt.jpeg" type="image/png">
+</head>
+<body>
+    <div>
+        <ul class="parent">
+            <li class="dropdown" onclick="toggleMenu(event)">
+              OTHER PROJECTS <i class="fa-sharp fa-solid fa-arrow-down"></i>
+          
+              <ul class="dropelement" id="menu">
+                <li><a href="index.html">Mattermark</a></li>
+                <li><a href="apt.html">Aptible</a></li>
+                <li><a href="paypal.html">Paypal</a></li>
+                <li><a href="mtn.html">MTN</a></li>
+                <li><a href="wapplyzer.html">Wapplyzer</a></li>
+                <li><a href="sky.html">Skyscanner</a></li>
+                <li><a href="uxpin.html">UX PIN</a></li>
+                <li><a href="spotify.html">Spotify</a></li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+     
+    <div class="apt">
+        <div class="launch">
+            <h3>
+                Launch, grow, and scale your app without <br> stopping to work on infrastructure.
+            </h3>
+            <h6 class="lunch">
+                <i class="bi bi-check-circle"></i>
+                Launch
+            </h6>
+            <p class="lunch">
+                Give Aptible your code via <span class="span">git push </span> or point at a Docker registry and <br> be up and running without any work or config.
+            </p>
+            <h6 class="lunch">
+                <i class="bi bi-check-circle"></i>
+                Grow
+            </h6>
+            <p class="lunch">
+                Aptible handles all infrastructure operations: zero-downtime deploys, <br>
+                instant rollbacks, metrics and logs that are both easy to find and use, <br> managed databases, and more.
+            </p>
+            <h6 class="lunch">
+                <i class="bi bi-check-circle"></i>
+                Scale
+            </h6>
+            <p class="lunch">
+                Enterprise requirements such as performance, security, compliance <br> inheritance, and reliability are baked into the Aptible platform from day <br> one.
+            </p>
+            <h5 class="high lunch">
+                HIGH GROWTH COMPANIES THAT HAVE SCALED
+                WITH NO INFRASTRUCTURE USING APTIBLE
+            </h5>
+            <img src="signup-sidebar-proof-3237013ce39665e20e4d51f2797fb79a.png" alt="" width="500">
+        </div>
+        <div class="get">
+            <h5 class="getto">Get started for free</h5>
+            <p class="getto pill">
+                Aptible’s PaaS automates the work of provisioning, managing, and scaling infrastructure, so you can focus on what matters: your product.
+            </p>
+            <!-- <form id="registrationForm">
+                <div>
+                    <label for="name">Name</label> 
+                    <input id="name"> <br>
+                    <p style="color: red;" id="nameError"></p>
+                </div>
+
+                <div>
+                    <label>Company</label> 
+                    <input type="text" required> <br>
+                </div>
+                
+                <div>
+                    <label for="email">Email</label> 
+                    <input id="email"><br>
+                    <p style="color: red;" id="emailError"></p>
+                </div>
+                <label>Password</label>
+                <input type="text" required>
+                <button class="but">Create Account</button><br><br>
+            </form> <br><br> -->
+            
+            <form id="registrationForm">
+    
+                <div>
+                    <label for="username">Name</label> 
+                    <input id="username" type="text"> 
+                    <p style="color: red;" id="usernameError"></p>
+                </div>
+            
+                <div>
+                    <label for="company">Company</label> 
+                    <input type="text" id="company">
+                </div>
+                
+                <div>
+                    <label for="email">Email</label> 
+                    <input id="email" type="text">
+                    <p style="color: red;" id="emailError"></p>
+                </div>
+            
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <p style="color: red;" id="passwordError"></p>
+                </div>
+            
+                <button type="submit">Register</button>
+            
+            </form>
+            <p>continue to third page <a href="">Third Page</a></p>
+            <p>If you already have an account, you can <a href="#" class="link">log in here.</a></p>
+            <p>By submitting this form, I confirm that I have read and agree to Aptible's<a href="#" class="link"> Terms of Service </a>and <a href="#" class="link">Privacy Policy.</a></p>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+          alert("This is a student project. It is not an attempt to clone any existing website.");
+        };
+
+        // FORM VALIDATION
+        // let nameformat= /^[a-zA-Z\s]+$/
+        // let emailformat= /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+        // let passwordformat= /^(?=.*[!@#$%^&(),.?":{}|<>])(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z\d!@#$%^&(),.?":{}|<>]{5,15}$/
+
+        // let myform= document.getElementById('registrationForm')        
+        // function Validate(e){
+        //     e.preventDefault()
+        //     let myuseremail= document.getElementById('email').value;
+        //     let name= document.getElementById('name').value;
+        //     let myuserpassword= document.getElementById('password').value;
+
+        //     emailError.innerHTML = '';
+        //     nameError.innerHTML = '';
+        //     passwordError.innerHTML = '';
+
+        //     let Ola= true;
+        //     if(!(myuseremail.match(emailformat))){
+        //         emailError.innerHTML='Invalid email'
+        //         Ola= false;
+        //     }
+
+        //     if(!(myname.match(nameformat))){
+        //         usernameError.innerHTML='Invalid Username'
+        //         Ola= false;
+        //     }
+        //     if(!(myuserpassword.match(passwordformat))){
+        //         passwordError.innerHTML='must be btw 5&15 characters, and must contain Uppercase, lowwer case and a special character'
+        //         Ola= false;
+        //     }
+
+        //     if(Ola){
+        //         myform.submit()
+        //     }
+           
+        // }
+        // myform.addEventListener('submit', (e)=>Validate(e))
+        // REGEX
+        let usernameformat = /^[a-zA-Z\s]+$/;
+        let emailformat = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        let passwordformat = /^(?=.*[!@#$%^&(),.?":{}|<>])(?=.*\d)(?=.*[a-zA-Z]).{5,15}$/;
+
+        // FORM
+        let myform = document.getElementById('registrationForm');
+
+        function Validate(e){
+            e.preventDefault();
+
+            // VALUES
+            let myusername = document.getElementById('username').value.trim();
+            let myuseremail = document.getElementById('email').value.trim();
+            let myuserpassword = document.getElementById('password').value.trim();
+
+            // ERRORS
+            let usernameError = document.getElementById('usernameError');
+            let emailError = document.getElementById('emailError');
+            let passwordError = document.getElementById('passwordError');
+
+            // CLEAR OLD ERRORS
+            usernameError.innerHTML = '';
+            emailError.innerHTML = '';
+            passwordError.innerHTML = '';
+
+            let Ola = true;
+
+            // USERNAME
+            if (!usernameformat.test(myusername)) {
+                usernameError.innerHTML = 'Name should contain only letters';
+                Ola = false;
+            }
+
+            // EMAIL
+            if (!emailformat.test(myuseremail)) {
+                emailError.innerHTML = 'Invalid email format';
+                Ola = false;
+            }
+
+            // PASSWORD
+            if (!passwordformat.test(myuserpassword)) {
+                passwordError.innerHTML = 
+                '5–15 chars, include letter, number & special character';
+                Ola = false;
+            }
+
+            // SUCCESS
+            if (Ola) {
+                alert("Form submitted successfully!");
+                myform.submit();
+            }
+        }
+
+        // EVENT
+        myform.addEventListener('submit', Validate);
+
+        function toggleMenu(e) {
+        e.stopPropagation(); 
+
+      let menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+
+      document.addEventListener("click", function () {
+        let menu = document.getElementById("menu");
+        menu.classList.remove("show");
+      });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+/* *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+body {
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.header{
+  background: #05203c;
+  padding: 20px;
+}
+
+.nav-header{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.a{
+  text-decoration: none;
+  
+}
+.parent {
+  list-style: none;
+  margin: 20px auto;
+  text-align: center;
+  width: fit-content;
+  color: white;
+  position: relative;
+
+}
+/* 
+.dropelement {
+  list-style: none;
+  background: white;
+  visibility: hidden;
+  position: absolute;
+  width: fit-content;
+  min-width: 120px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  text-align: center;
+} */
+
+.parent:hover {
+  /* list-style: none;
+  /* margin: 20px auto; */
+  /* text-align: center;
+  position: relative; * */
+  color: black;
+  background: skyblue;
+}
+
+/* .dropelement {
+  list-style: none;
+  background: white;
+  visibility: hidden;
+  position: absolute;
+  min-width: 150px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  display: none;
+  transition: all 0.3s ease;
+} */
+.dropelement{
+  display: none;
+  transition: all 0.3s ease;
+  list-style: none;
+  background: white;
+  
+
+}
+.dropelement :hover{
+  background: skyblue;
+}
+
+.dropelement {
+  display: none;
+}
+
+.dropelement.show {
+  display: block;
+}
+
+
+.parent:hover .dropelement {
+  visibility: visible;
+  width: fit-content;
+}
+
+.parent:hover li:hover {
+  cursor: pointer;
+  color: black;
+  background: skyblue;
+}
+.flight-button,.hotelhire-button,.carhire-button{
+    color: white; 
+    background: #05203c; 
+    border-radius: 50px; 
+    border-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right:12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}   
+.flight-button:hover,.hotelhire-button:hover,.carhire-button:hover{
+    background: blue;
+} 
+/* .flight-button:hover{
+  background: navy;
+}
+.hotelhire-button:hover{
+    background: navy;   
+}
+.carhire-button:hover{
+    background: navy;
+} */
+
+.hotel-button,.car-button,.explore-button{
+    color: white; 
+    background: #05203c; 
+    border-radius: 50px; 
+    border-color: white 
+}
+.select{
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.input{
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+}
+#search{
+  padding: 20px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: Georgia;
+}
+
+.selection{
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+#checkbox{
+  display: flex;
+  flex-direction: row;
+}
+.hotel-button,.car-button,.explore-button{
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.explore{
+  background-image: url(sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.explore-div{
+  color: ghostwhite;
+  padding-top: 50px;
+  padding-left: 50px;
+  
+}
+.explore-flight-button{
+    background: ghostwhite;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 200px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.accord{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.accordbut{
+    font-size: 20px;
+    font-weight: 40px;
+}
+
+.footer {
+  background: #05203c;
+  color: white;
+  padding: 20px;
+}
+
+.footer-direction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-direction nav {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footer-direction ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-direction ul li {
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.lang-btn {
+  background: #0a355f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-accordion .accordion-item {
+  background: transparent;
+  border: none;
+}
+
+.footer-accordion .accordion-button {
+  background: transparent;
+  color: white;
+  border: none;
+  box-shadow: none;
+  padding-left: 0;
+}
+
+.footer-accordion .accordion-button::after {
+  filter: invert(1); 
+}
+
+.footer-accordion .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: #f0f0f0;
+}
+
+.footer-accordion .accordion-body {
+  background: transparent;
+  color: #ccc;
+  padding-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+    .selection, .accord {
+      justify-content: center;
+      text-align: center;
+    }
+    .nav-header {
+      justify-content: center;
+    }
+  }
+  
+  /* Medium screens ≤ 992px */
+  @media (max-width: 992px) {
+    .nav-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .selection {
+      flex-direction: column;
+      align-items: center;
+    }
+    .accord {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Tablets ≤ 768px */
+  @media (max-width: 768px) {
+    .footer-direction {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .explore-div {
+      font-size: 16px;
+    }
+    .explore-flight-button {
+      width: 80%;
+      margin: 10px auto;
+    }
+    .flight-button, .hotelhire-button, .carhire-button {
+      width: 80%;
+      margin: 5px auto;
+    }
+  }
+  
+  /* Small devices ≤ 480px */
+  @media (max-width: 480px) {
+    .accordbut {
+      font-size: 16px;
+    }
+    .explore-div {
+      font-size: 14px;
+    }
+    .explore-flight-button {
+      width: 100%;
+    }
+    .flight-button, .hotelhire-button, .carhire-button {
+      width: 100%;
+    }
+    .nav-header {
+      gap: 5px;
+    }
+  }
